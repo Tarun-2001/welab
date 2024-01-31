@@ -1,1 +1,1 @@
-I am editing the README file. Adding some more details about the project description.# welab
+These are most commonly daily based using git commands
