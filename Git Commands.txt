@@ -1,0 +1,97 @@
+git config --list ->  It will list all the information about the git like user name and user email
+ 
+git config --global user.name "Your Name" -> used to set the user name
+
+git config --global user.email "Your Email" -> used to set the email
+
+
+
+git init -> 1st step it will intiliase the git in the repository
+
+git add . or git add "Name" -> add the files into the stagging area.
+
+git commit - m "Message" -> Commit the changes . Git will commit only which are in staging area.
+
+git commit -a -m "Message - >commits the changes directly without addint into the stagging area. (Stagging area is the place changed files are need to commit)
+
+
+Showing history
+---------------
+
+git log -> Shows all the commit messages with a unique ID
+
+git log -p (here p means patch this command will show the all the changes in the each file )
+
+git show <commit _id> -> This will show the changes in files in that particular commit id
+
+git log --stat -> Shows how many lines added and removed (Not much important)
+
+
+About changes 
+-------------
+
+git diff -> shows the changes in all files
+
+git add -p -> Add into the stage area with showing the changes in the file
+
+git diff default shows the changes made in untacked file(not staged)
+
+git diff -stage -> Shows the changes in staged file
+
+git diff --cached -> shows the changes between the staging area and the last commit.
+
+git diff HEAD -> shows the changes between the working directory and the last commit.
+
+git diff <commit> -> shows the changes between the working directory and the 
+
+
+Removing and renaming
+-------------------
+
+git rm <file-name> -> removes the file and stage it automatically
+
+git mv <old-filename> <new-filename> -> raname the file and stage it automatically
+
+
+Undoing Changes Before Committing
+-----------------------------------
+
+git checkout "fileName" -> Undo the changes if they are not in staging area
+
+git reset --HEAD "file Name" ->Undo the changes if they are in staging area
+
+Reverting
+----------
+
+git revert <Commit Id> -> revert all changes to that particular commit id and creates a new commit
+
+
+Branch
+--------
+git branch -> shows the all branches 
+
+git branch <new-branch> -> creates a new brach 
+
+git checkout -b <branch_name> -> create a new branch and shift into it
+
+git branch -D <branch_name> -> deletes the branch
+
+Merging
+-----------
+
+git merge <branch_name> -> merge the commits and code to current branch with the branch_name
+
+git merge --abort -> it will stop the merge and revert back all changes. In case you've made a mistake while resolving a conflict and realize this only after completing the merge.
+
+
+remote repository
+------------------
+
+git fetch -> will download the updates intlo local repo and does't update
+
+git merge -> it will merge the downloaded updates into local repo
+
+
+
+
+
